@@ -1,0 +1,73 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{akoglu_users_2018}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a04a4797796e0dbf5076d14096c48896}{%
+           family={Akoglu},
+           familyi={A\bibinitperiod},
+           given={Haldun},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a04a4797796e0dbf5076d14096c48896}
+      \strng{fullhash}{a04a4797796e0dbf5076d14096c48896}
+      \strng{bibnamehash}{a04a4797796e0dbf5076d14096c48896}
+      \strng{authorbibnamehash}{a04a4797796e0dbf5076d14096c48896}
+      \strng{authornamehash}{a04a4797796e0dbf5076d14096c48896}
+      \strng{authorfullhash}{a04a4797796e0dbf5076d14096c48896}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{24522473}
+      \field{journaltitle}{Turkish Journal of Emergency Medicine}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{3}
+      \field{shortjournal}{Turkish Journal of Emergency Medicine}
+      \field{title}{User's guide to correlation coefficients}
+      \field{urlday}{23}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{volume}{18}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{91\bibrangedash 93}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1016/j.tjem.2018.08.001
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\hanna\\Zotero\\storage\\2JVNBZ8Q\\Akoglu - 2018 - User's guide to correlation coefficients.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2452247318302164
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2452247318302164
+      \endverb
+      \keyw{Correlation Coefficients,Statistical Analysis}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
