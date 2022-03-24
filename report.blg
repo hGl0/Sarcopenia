@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'report.blg'
-[104] biber-MSWIN64:340> INFO - === 
-[142] Biber.pm:415> INFO - Reading 'report.bcf'
-[243] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
-[256] Biber.pm:4340> INFO - Processing section 0
-[267] Biber.pm:4531> INFO - Looking for bibtex format file 'Sources.bib' for section 0
-[333] bibtex.pm:1689> INFO - LaTeX decoding ...
-[337] bibtex.pm:1494> INFO - Found BibTeX data source 'Sources.bib'
-[369] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[369] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[369] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[369] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[374] bbl.pm:654> INFO - Writing 'report.bbl' with encoding 'UTF-8'
-[375] bbl.pm:757> INFO - Output to report.bbl
+[1] Config.pm:314> INFO - Logfile is 'report.blg'
+[235] biber-MSWIN64:340> INFO - === 
+[310] Biber.pm:415> INFO - Reading 'report.bcf'
+[514] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[543] Biber.pm:4340> INFO - Processing section 0
+[567] Biber.pm:4531> INFO - Looking for bibtex format file 'Sources.bib' for section 0
+[675] bibtex.pm:1689> INFO - LaTeX decoding ...
+[685] bibtex.pm:1494> INFO - Found BibTeX data source 'Sources.bib'
+[757] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[757] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[757] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[757] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[769] bbl.pm:654> INFO - Writing 'report.bbl' with encoding 'UTF-8'
+[770] bbl.pm:757> INFO - Output to report.bbl

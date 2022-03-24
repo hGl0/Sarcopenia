@@ -33,13 +33,14 @@
 \setlength{\headheight}{40pt}
 \date{}
 \pagenumbering{Roman}
-\rhead{Stastical Analysis}
 \lhead{Sarcopenia Dataset}
 
 \begin{document}
 \twocolumn
 \maketitle
 \thispagestyle{fancy}
+
+\section{Statistical Analysis}
 The used data set contained initially 250 entries, where each entry represents a patient, with 84 features. After removing ID, 17 entries were deleted as they were duplicates. Furthermore 8 misses in \emph{Marcha} (engl. walking speed) were imputed with the mean. The encoding of the categorical data was changed, so that afterwards $0$ did always correspond to either \emph{Not answered}, \emph{Not required} or \emph{Regular value}. To obtain comparable values for variance of each feature a min-max-normalisation was applied, given by Equation \ref{eq:minmax}.
 
 \begin{equation}\label{eq:minmax}
@@ -56,8 +57,7 @@ The remaining 231 entries included 42 serve and 189 mild sarcopenia cases. The d
 
 The features with the highest Spearman correlation coefficient $r_s$ are listed in Table \ref{table:corr}. The used threshold for a high correlation was $|r_s| > 0,7$ as suggested by Akoglu in \cite{akoglu_users_2018}. In each row of Table \ref{table:corr} either feature 1 or feature 2 could be removed.
 
-The $\chi_2$
-
+% table with high correlation coefficients
 \begin{table}[t]
 \centering
 \begin{tabular}{|c c|S|}
@@ -71,16 +71,53 @@ Drogas&Visiòn&-0.7028060168312469\\ \hline
 \label{table:corr}
 \end{table}
 
-
-
-
-
+% table with p value and f1 result
+\begin{table}[t]
+\centering
+\begin{tabular}{|c|S S|}
+\hline
+Feature & $\text{p}$		& $\text{f1}$ \\ \hline
+TNCM	& 0.000403	& 14.971373\\
+Demencia& 0.000654 	& 15.254129\\
+FuerzaPrension &  0.005826    &   8.956896\\
+Pantorrilla &   0.097496       &  40.598309\\
+IMM & 0.135147   &  24.095192\\
+LawtonAR &    0.171091   &   3.151468\\
+Dolor &     0.173250  &   2.866794\\
+Congiciòn &     0.173992    &   4.143239\\
+Charlson &    0.177932  &   2.372304\\
+CorreccionVisual &  0.195190  &   9.427020\\
+\hline
+%7   Ocupacion  	 0.214646      8.094724
+%39  NortonAlto      0.386392      7.721943
+%1   Edad		     0.557026      4.422385
+\end{tabular}
+\caption{Features and their corresponding p-value and f1-value to \emph{sarcopenia} }
+\label{table:chi2_anova}
+\end{table}
 
 \begin{figure*}[t]
 \includegraphics[width=\linewidth]{boxplot_serve_mild.png}
-\caption{Boxplot of all remaining features, black boxes are from all mild cases and red from all serve, respectively}
+\caption{Boxplot of all remaining features, black boxes are created from all mild cases and red from all serve, respectively}
 \label{fig:boxplots}
 \end{figure*}
+
+The results of a $\chi_2$ and \emph{ANOVA} analysis are displayed in Table \ref{table:chi2_anova}. The 10 features with the lowest p-value from $\chi_2$ analysis are almost the same as the ones with the highest f1 score. Only Ocupacion, NortonAlto and Edad (engl. age) achieved a higher f1 score, but a had also a higher p-value.
+
+
+Figure \ref{fig:boxplots} displays the plotted boxes of all remaining 53 features, where black boxes are generated from the subset of mild cases and red boxes from serve cases, respectively. Features with a difference at their mean and inter quartile range are especially interesting and very likely to be important for decision making. As can be seen features such as TNCM, Charlson, IMM, FuerzaPrension, Demencia and Dolor vary a lot for serve and mild cases. This also supports the calculated values and assignment of importance from the calculation of the p- and f1-value.
+
+\section{Hyperparameter Tuning}
+\begin{figure*}[t]
+\includegraphics[width=\linewidth]{heatmap_svc_hyperparameter.png}
+\caption{Results of hyperparameter tuning for SVM}
+\label{fig:hyper_svc}
+\end{figure*}
+
+A \emph{Support Vector Machine} (hereinafter: SVM) was used to predict the severity of sarcopenia. A cross validated grid search was applied to get an impression which parameters might be a good fit. Fig. \ref{fig:hyper_svc} displays the results, where \emph{C}, $\gamma$ and 3 different kernels were considered. In every setting the \emph{Radial Basis Function} (rbf) did perform at least as good as the two other kernel. Furthermore it can be clearly seen that $C=2$ and $\gamma=scale$ are the best setting with the rbf kernel.
+
+\section{Feature Selection}
+
 
 
 \printbibliography[heading=bibintoc, title={References}]
