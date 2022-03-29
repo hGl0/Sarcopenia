@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.23)  25 MAR 2022 12:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.23)  28 MAR 2022 12:32
 entering extended mode
 **./report.tex
 (report.tex
@@ -686,14 +686,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
 (C:\Users\hanna\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 <boxplot_serve_mild.png, id=1, 1445.4pt x 361.35pt>
 File: boxplot_serve_mild.png Graphic file (type png)
 <use boxplot_serve_mild.png>
 Package pdftex.def Info: boxplot_serve_mild.png  used on input line 118.
 (pdftex.def)             Requested size: 483.69687pt x 120.92204pt.
+
 [1{C:/Users/hanna/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
@@ -717,10 +715,8 @@ File: heatmap_rf_hyperparameter.png Graphic file (type png)
 Package pdftex.def Info: heatmap_rf_hyperparameter.png  used on input line 138.
 
 (pdftex.def)             Requested size: 483.69687pt x 161.23306pt.
-[2 <./boxplot_serve_mild.png>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 51.
-
 (C:\Users\hanna\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -735,8 +731,11 @@ Overfull \hbox (1.33719pt too wide) in paragraph at lines 151--151
 (vis-
  []
 
-[3 <./heatmap_svc_hyperparameter.png> <./heatmap_rf_hyperparameter.png>]
-(report.aux)
+[2 <./boxplot_serve_mild.png>] [3
+
+ <./heatmap_svc_hyperparameter.png> <./heatmap_rf_hyperparameter.png>] [4
+
+] (report.aux)
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
@@ -749,10 +748,10 @@ Here is how much of TeX's memory you used:
  418285 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,12n,81p,736b,1642s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+ <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
 1095.pk> <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\eccc1095.pk> <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1095.pk> <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+0\ectt1095.pk> <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\eccc1095.pk> <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
 pen/ec/dpi600\ecti1095.pk> <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/
 ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\hanna\AppData\Local\MiKTeX\fon
@@ -765,7 +764,7 @@ ers/hanna/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pf
 b><C:/Users/hanna/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmr8.pfb><C:/Users/hanna/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb>
-Output written on report.pdf (3 pages, 224099 bytes).
+Output written on report.pdf (4 pages, 223456 bytes).
 PDF statistics:
  311 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
