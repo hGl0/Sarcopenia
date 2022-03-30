@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.23)  29 MAR 2022 18:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.23)  30 MAR 2022 13:38
 entering extended mode
 **./report.tex
 (report.tex
@@ -736,13 +736,10 @@ File: heatmap_rf_hyperparameter.png Graphic file (type png)
 Package pdftex.def Info: heatmap_rf_hyperparameter.png  used on input line 127.
 
 (pdftex.def)             Requested size: 483.69687pt x 161.23306pt.
-
-Overfull \hbox (3.87831pt too wide) in paragraph at lines 202--203
-\T1/cmr/m/n/10.95 ANOVA and per-muted fea-ture im-por-tance for SVM
- []
-
+[2 <./boxplot_serve_mild.png>] [3]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
 05.
+
 (C:\Users\hanna\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -757,10 +754,10 @@ Overfull \hbox (1.33719pt too wide) in paragraph at lines 205--205
 (vis-
  []
 
-[2 <./boxplot_serve_mild.png>] [3] [4
+[4
 
- <./heatmap_svc_hyperparameter.png> <./heatmap_rf_hyperparameter.png>] (report.
-aux)
+ <./heatmap_svc_hyperparameter.png> <./heatmap_rf_hyperparameter.png>]
+(report.aux)
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
@@ -768,11 +765,11 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 Here is how much of TeX's memory you used:
  16086 strings out of 478838
  326745 string characters out of 2848020
- 1110906 words of memory out of 3000000
+ 1109906 words of memory out of 3000000
  33842 multiletter control sequences out of 15000+600000
  418147 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,12n,81p,733b,1642s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,12n,81p,823b,1642s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk> <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\eccc1095.pk> <C:\Users\hanna\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -792,7 +789,7 @@ nts/cm/cmr8.pfb><C:/Users/hanna/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb><C:/Users/hanna/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmsy6.pfb><C:/Users/hanna/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on report.pdf (4 pages, 269473 bytes).
+Output written on report.pdf (4 pages, 269670 bytes).
 PDF statistics:
  368 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
